@@ -11,12 +11,17 @@ import java.math.BigDecimal
 class MainViewModel : ViewModel() {
 
     val navigateToGoalFragment = SingleLiveEvent<Unit>()
+    val navigateToHomeFragment = SingleLiveEvent<Unit>()
 
     fun navigateToGoal() {
         navigateToGoalFragment.value = Unit
     }
 
-    val mockGoalList = listOf(
+    fun navigateToHome() {
+        navigateToHomeFragment.value = Unit
+    }
+
+    val mockGoalList = mutableListOf(
         GoalModel(
             title = "ไปเที่ยวญี่ปุ่น",
             type = GoalTypes.Travel,
@@ -45,4 +50,8 @@ class MainViewModel : ViewModel() {
             status = GoalStatus.Good
         )
     )
+
+    fun addGoal(goal: GoalModel) {
+        mockGoalList.add(goal)
+    }
 }

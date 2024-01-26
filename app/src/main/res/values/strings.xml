@@ -1,17 +1,28 @@
 <resources>
     <string name="app_name">salehere</string>
-     <string name="currency">%s THB</string>
-     <string name="remaining_date">%s days left</string>
-     <string name="goals_number">%s Goals</string>
-     <string name="all_save_number">All Saving %s THB</string>
-     <string name="new_goals_label">New Goals</string>
-     <string name="best_offer_label">Best Offer</string>
-     <string name="suggest_for_you_label">Suggest for you</string>
-     <string name="achievement_label">Achievement</string>
-     <string name="level_label">Level 2</string>
-     <string name="what_is_your_goal_label">What is your goal</string>
-     <string name="amount_label">Amount</string>
-     <string name="select_date_label">Select Date</string>
-     <string name="bank_account_label">Bank Account</string>
-     <string name="select_account_label">Select Account</string>
+    <string name="currency">%s THB</string>
+    <string name="remaining_date">%s days left</string>
+    <string name="goals_number">%s Goals</string>
+    <string name="all_save_number">All Saving %s THB</string>
+    <string name="new_goals_label">New Goals</string>
+    <string name="best_offer_label">Best Offer</string>
+    <string name="suggest_for_you_label">Suggest for you</string>
+    <string name="achievement_label">Achievement</string>
+    <string name="level_label">Level 2</string>
+    <string name="what_is_your_goal_label">What is your goal</string>
+    <string name="amount_label">Amount</string>
+    <string name="select_date_label">Select Date</string>
+    <string name="bank_account_label">Bank Account</string>
+    <string name="select_account_label">Select Account</string>
+    <string name="submit_label">Submit</string>
+    <string name="baht_per_month_label">THB/MONTH</string>
+
+    <string-array name="bank_account">
+        <item>Select Bank Account</item>
+        <item>KTB</item>
+        <item>SCB</item>
+        <item>KBANK</item>
+        <item>TTB</item>
+        <item>MBANK</item>
+    </string-array>
 </resources>

@@ -28,7 +28,9 @@
             android:id="@+id/et_goal_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/ibm_plex_sans_thai_bold"
             android:background="@color/white"
+            android:paddingHorizontal="16dp"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -78,7 +80,7 @@
         android:fontFamily="@font/ibm_plex_sans_thai_regular"
         android:hint="@string/amount_label"
         android:padding="16dp"
-        android:textColor="@color/red_CA5D48"
+        android:textColor="@color/black"
         android:textSize="14sp" />
 
     <EditText
@@ -94,7 +96,7 @@
         android:fontFamily="@font/ibm_plex_sans_thai_regular"
         android:hint="@string/select_date_label"
         android:padding="16dp"
-        android:textColor="@color/red_CA5D48"
+        android:textColor="@color/black"
         android:textSize="14sp" />
 
     <TextView
@@ -114,6 +116,7 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/bg_edittext"
+        android:fontFamily="@font/ibm_plex_sans_thai_bold"
         android:spinnerMode="dropdown" />
 
     <EditText
@@ -123,7 +126,20 @@
         android:layout_marginHorizontal="16dp"
         android:background="@drawable/bg_edittext"
         android:fontFamily="@font/ibm_plex_sans_thai_regular"
+        android:hint="@string/baht_per_month_label"
         android:padding="16dp"
-        android:textColor="@color/red_CA5D48"
+        android:textColor="@color/black"
         android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/red_CA5D48"
+        android:fontFamily="@font/ibm_plex_sans_thai_bold"
+        android:text="@string/submit_label"
+        android:textColor="@color/white" />
+
 </LinearLayout>

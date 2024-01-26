@@ -43,7 +43,9 @@ class MainActivity : AppCompatActivity() {
         }
         mSocket?.on("new notification") {
             this@MainActivity.runOnUiThread {
-                binding.homeBottomNavMenu.getOrCreateBadge(0)
+                run {
+                    binding.homeBottomNavMenu.getOrCreateBadge(0)
+                }
             }
         }
         mSocket?.connect()
@@ -86,6 +88,10 @@ class MainActivity : AppCompatActivity() {
         with(mainViewmodel) {
             navigateToGoalFragment.observe(this@MainActivity) {
                 loadFragment(GoalFragment.newInstance())
+            }
+
+            navigateToHomeFragment.observe(this@MainActivity) {
+                loadFragment(HomeFragment.newInstance())
             }
         }
     }
