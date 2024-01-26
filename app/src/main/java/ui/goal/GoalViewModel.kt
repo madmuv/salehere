@@ -24,10 +24,10 @@ class GoalViewModel : ViewModel() {
 
     fun onSelectedType(position: Int) {
         val type = when (position) {
-            0 -> GoalTypes.Travel
-            1 -> GoalTypes.Education
-            2 -> GoalTypes.Invest
-            3 -> GoalTypes.Clothing
+            1 -> GoalTypes.Travel
+            2 -> GoalTypes.Education
+            3 -> GoalTypes.Invest
+            4 -> GoalTypes.Clothing
             else -> GoalTypes.Travel
         }
         goalModel = goalModel?.copy(type = type) ?: GoalModel(type = type)
